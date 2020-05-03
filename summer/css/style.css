@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	font-family: 'Forum', cursive;
+}
+body{
+	background: black;
+}
+.color{
+	color: #884088;
+}
+
+h1{
+	font-size: 50pt;
+	text-shadow: 1px 1px 1px black, 0 0 50em black; 
+	position: absolute;
+	z-index: 7;
+	margin-top: 5%;
+	margin-left: 15vh;
+	font-family: 'Bad Script', cursive;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header{
+	align-self: flex-start;
+	clip-path: polygon(100% 0, 91% 17%, 71% 20%, 61% 33%, 43% 35%, 28% 46%, 13% 43%, 0 47%, 0 0);
+	background: url(../img/summer.gif);
+	background-size: 100% 50%;
+	opacity: 0.8;
+	height: 30%;
+	width:110vh;	
+}
+.header2{
+	clip-path: polygon(100% 0, 91% 17%, 71% 20%, 61% 33%, 43% 35%, 28% 46%, 13% 43%, 0 47%, 0 0);
+	background: black;
+	opacity: 0.2;
+	height: 700px;
+	width:1400px;
+}
+.content{
+	margin-top: -40%;
+	width: 80%;
+}
+h2{
+	text-align: center;
+	font-size: 35pt;
+	margin-left: 35%;
+}
+.line{
+	background: white;
+	width: 100%;
+	height: 5px;
+}
+.h2{
+	text-align: left;
+	color: #fff;
+	font-size: 35pt;
+	padding-left: 10px;
+	margin-left: 2%;
+	margin-top: 50px;
+}
+.footer{
+	clip-path: polygon(100% 0, 91% 17%, 71% 20%, 59% 43%, 35% 44%, 28% 67%, 7% 76%, 0 100%, 100% 100%);
+	background: url(../img/summer.gif);
+	background-size: 100% 100%;
+	height: 300px;
+	width:80vh;
+	margin-left: 60.5%;
+	opacity: 0.9;
+
+}
+.tabs{
+	margin-top: 5%;
+	display: flex;
+}
+.tab{
+	height: 110%;
+	padding: 5px 25px;
+	border: 1px solid #fff;
+	
+	margin-left: 10%;
+	font-size: 20pt;
+}
+.tab:hover{
+	background: #ce93d8;
+	color: black;
+	transition: 0.5s;
+}
+.tab-content{
+	height: 100%;
+	width: 70%;
+	margin: 0 20% 10% 12%;
+	text-align: center;
+	font-size: 15pt;
+}
+.tab-text{
+	color: #fff;
+	margin-left: 40px;
+	margin-top: 20px;
+	font-size: 20pt;
+}
+.meta{
+	display: flex;
+	flex-direction: row;
+	margin: 2% 8% 0 0%;
+	width: 70%;
+}
+.row{
+	margin: 20px;
+}
+h3{
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+.row p{
+	font-size: 20pt;
+}
+.row img{
+	width: 70%;
+	margin: 5px 30px;
+}
+
+.line_h1{
+	width: 280px;
+	height: 3px;
+	background: #fff;
+	margin-left:51%; 
+	animation: lines 2s;}
+@keyframes lines{
+	0%{
+		width: 0px;
+	}
+	100%{
+		width: 225px;
+	}
+}
+.line_h2{
+	width: 80px;
+	height: 3px;
+	background: #fff;
+	margin-left: 3%;
+	animation: lines1 7s;}
+
+@keyframes lines1{
+	0%{
+		width: 0px;
+	}
+	75%{
+		width: 0;
+	}
+	100%{
+		width: 80px;
+	}
+}
