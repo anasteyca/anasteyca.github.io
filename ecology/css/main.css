@@ -1,0 +1,233 @@
+/*bg anim*/
+#particles-js{
+	width: 100%;
+	height: 3000px;
+	position: absolute;
+}
+/*content-title=sections*/
+.trouble-title-section,
+.man-title-section,
+.tabs-title-section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	margin-top: 200px;
+}
+/*title section*/
+.title-section{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+}
+.title-box{
+	width: 100%;
+	height: 90%;
+	background: #000000ab;
+	border: 2px solid #fff;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-title{
+	color: #fff;
+	text-align: center;
+}
+/*trouble-section*/
+.trouble-section{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.trouble-box{
+	height: 70%;
+	width: 32%;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+.trouble-img{
+	height: 75%;
+	width: 100%;
+	background-size: cover;
+}
+.trouble-box:nth-child(1) img{background-image: url(../img/ocean.png);}
+.trouble-box:nth-child(2) img{background-image: url(../img/air.png);}
+.trouble-box:nth-child(3) img{background-image: url(../img/wood.jpg);}
+.more{
+	width: 100%;
+	height: 30%;
+	background: #096f2370;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18pt;
+	text-align: center;
+	cursor: pointer;
+	margin: 0;
+}
+.trouble-box-more{
+	width: 32%;
+	height: 100%;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	background: #000000ab;
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+}
+.trouble-text{
+	width: 100%;
+	margin-top: 20px;
+}
+.cross{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/cross.png);
+	align-self: flex-end;
+	background-size: cover;
+	cursor: pointer;
+}
+/*man-section*/
+.man-section{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: 0.7s;
+}
+.man-box{
+	position: relative;
+	width:  25%;
+	height: 80%;
+}
+.front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	transition: 0.9s;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	color: #fff;
+}
+.front {
+	border: 3px solid #fff;
+	border-radius: 40px;
+	text-align: center;
+}
+.back {
+	transform: rotateY(180deg);
+	border-radius: 40px;
+	background: #000000ab;
+
+	border: 2px solid #fff;
+}
+.front img{
+	width: 70%;
+	border-radius: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	text-align: right;
+}
+/*tabs-section*/
+.tabs-section{
+	width: 100%;
+	height: 400px;
+	border: 2px solid #fff;
+	margin-top: 60px;
+	border-radius: 60px;
+	display: flex;
+	overflow: hidden;
+	transition: 0.6s;
+}
+.tabs{
+	height: 100%;
+	min-width: 132px;
+	width: 132px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.tab{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #fff;
+	background: #169e39;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#tab1{
+	background: transparent;
+}
+.select{
+	width: 132px;
+	height: 132px;
+	background: #000000ab;
+	position: absolute;
+	transition: 0.6s;
+	z-index: -1;
+}
+.tab-content{
+	background: #000000ab;
+	height: 100%;
+	width: 100%;
+}
+.tab-title, .tab-text{
+	color: #fff;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+/*hover animation*/
+.man-box:hover .front {transform: rotateY(180deg);}
+.man-box:hover .back {transform: rotateY(360deg);}
+
+.more:hover{
+	background: #169e39;
+}
+
+/*input*/
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: #000000ab;
+  color: #fff;
+  margin-top: 40px;
+}
+
+label {
+  color: #999;
+  font-size: 13px;
+  position: absolute;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  top: 63px;
+  left: -15px;
+  font-family: 'Comfortaa';
+}
+
+input:focus ~ label, input:valid ~ label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  font-size: 13px;
+  color: #fff;
+}
+
